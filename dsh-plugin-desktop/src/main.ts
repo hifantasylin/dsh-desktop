@@ -137,7 +137,7 @@ import {
 import { windowsSupportsMica } from './window-material.ts'
 
 const BIN_NAME = 'dsh-plugin-desktop'
-const PRODUCT_NAME = 'DSH Desktop'
+const PRODUCT_NAME = 'Rouba DSH'
 
 class RendererStartupFailure extends Error {
   constructor(

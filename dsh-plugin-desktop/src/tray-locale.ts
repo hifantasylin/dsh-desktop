@@ -72,7 +72,7 @@ export interface DesktopRestartConfirmationCopy {
 const restartConfirmationCopy: Record<DesktopLocale, Record<'normal' | 'recovery', DesktopRestartConfirmationCopy>> = {
   en: {
     normal: {
-      title: 'Restart DSH Desktop',
+      title: 'Restart Rouba DSH',
       message: 'Restart DSH Desktop now?',
       detail: 'Running operations and unsent input may be interrupted. Saved settings will not be lost.',
       confirm: 'Restart',
@@ -88,7 +88,7 @@ const restartConfirmationCopy: Record<DesktopLocale, Record<'normal' | 'recovery
   },
   zh: {
     normal: {
-      title: '重启 DSH Desktop',
+      title: '重启 Rouba DSH',
       message: '现在重启 DSH Desktop？',
       detail: '正在运行的操作和未发送的输入可能会中断，已保存的设置不会丢失。',
       confirm: '重启',

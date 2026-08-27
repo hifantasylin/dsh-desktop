@@ -391,7 +391,7 @@ export function apply(ctx: Context, config: Config): void {
           runtime.windowsBuild,
         ),
         rendererAccessHeader: browserAccess.rendererHeader,
-        productName: 'DSH Desktop',
+        productName: 'Rouba DSH',
         windowTitle: 'DeepSeek Harness Desktop',
         iconPath,
         trayIcons,

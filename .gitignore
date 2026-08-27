@@ -14,3 +14,6 @@ dsh-plugin-desktop/lib/
 dsh-community-market/lib/
 
 .env.yarn
+
+# AI 码律（Codeedict）开发文档工作区
+.codeedict/

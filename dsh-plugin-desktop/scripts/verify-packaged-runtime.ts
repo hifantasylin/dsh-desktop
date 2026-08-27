@@ -1,9 +1,11 @@
 /** Fail-loud verification of the runtime entries sealed into Electron's app.asar. */
 
+import { spawnSync } from 'node:child_process'
 import { existsSync, mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { tmpdir } from 'node:os'
-import { isAbsolute, join, relative, sep } from 'node:path'
+import { dirname, isAbsolute, join, relative, sep } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { Worker } from 'node:worker_threads'
 import { listPackage } from '@electron/asar'
 import AdmZip from 'adm-zip'
@@ -408,6 +410,22 @@ export function verifyPackagedRuntime(
  * @param context - Electron Builder's afterPack context.
  * @returns A promise that rejects before signing when the runtime is incomplete.
  */
+/**
+ * Inject locally-built DSH client packages (media/brand changes) into the
+ * packaged app's unpacked dependency tree, so upstream fork edits run in the
+ * desktop app. Delegates to the standalone override script via a subprocess so
+ * the package list stays in one place and is testable in isolation.
+ * @param appOutDir - Completed unpacked application directory.
+ */
+function overrideLocalDshPackages(appOutDir: string): void {
+  const script = join(dirname(fileURLToPath(import.meta.url)), 'override-local-dsh-packages.mjs')
+  const result = spawnSync(process.execPath, [script, appOutDir], { stdio: 'inherit' })
+  if (result.error !== undefined) throw result.error
+  if (result.status !== 0) {
+    throw new Error(`override-local-dsh-packages exited with ${String(result.status)}`)
+  }
+}
+
 export async function afterPack(
   context: PackagedRuntimeContext,
   verify: typeof verifyPackagedRuntime = verifyPackagedRuntime,
@@ -415,6 +433,9 @@ export async function afterPack(
 ): Promise<void> {
   verify(context)
   await smoke(resolvePackagedUnpackedRoot(context))
+  // Inject locally-built DSH client packages (media/brand changes) into the
+  // unpacked dependency tree after the static runtime checks pass.
+  overrideLocalDshPackages(context.appOutDir)
 }
 
 export default afterPack
