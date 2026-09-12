@@ -75,7 +75,7 @@ async function smokeSessionMigration(): Promise<void> {
     assert(readFileSync(join(directory, 'session.v2.jsonl'), 'utf8') === source, 'changed the original V2 session log')
   } finally {
     await ctx.fiber.dispose()
-    rmSync(root, { recursive: true, force: true })
+    rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
   }
 }
 
@@ -103,7 +103,7 @@ async function smokeDiagnosticExportWorker(): Promise<void> {
       `diagnostic Worker omitted ${crashEntry}`,
     )
   } finally {
-    rmSync(root, { recursive: true, force: true })
+    rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
   }
 }
 
@@ -215,7 +215,7 @@ try {
     releaseResolver()
   }
 } finally {
-  rmSync(root, { recursive: true, force: true })
+  rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
 }
 
 await smokeSessionMigration()

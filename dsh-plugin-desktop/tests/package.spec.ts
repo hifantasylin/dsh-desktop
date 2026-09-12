@@ -816,7 +816,7 @@ describe('published package surface', () => {
       target: 'nsis',
       arch: ['x64'],
     }])
-    expect(manifest.build?.win?.artifactName).toBe('DSH-Desktop-${version}-${arch}-Portable.${ext}')
+    expect(manifest.build?.win?.artifactName).toBe('RoubaAI-DSH-Desktop-${version}-${arch}-Portable.${ext}')
     expect(manifest.build?.nsis).toEqual({
       include: 'installer.nsh',
       installerIcon: 'build/app-icon.ico',
@@ -831,7 +831,7 @@ describe('published package surface', () => {
       shortcutName: 'DSH Desktop',
       uninstallerIcon: 'build/app-icon.ico',
       useZip: false,
-      artifactName: 'DSH-Desktop-${version}-${arch}-Setup.${ext}',
+      artifactName: 'RoubaAI-DSH-Desktop-${version}-${arch}-Setup.${ext}',
     })
     expect(manifest.build?.linux?.icon).toBe('build/app-icon.png')
   })

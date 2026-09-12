@@ -84,6 +84,8 @@ export const ALLOWED_SMART_UNPACK_PACKAGE_ROOTS = [
   // pnpm embeds executable and native helper payloads.
   'node_modules/pnpm',
   'node_modules/sharp',
+  // dsh-better-sidebar ships its own node-pty, so the whole root unpacks as one unit.
+  'node_modules/dsh-better-sidebar',
 ] as const
 
 /** Platform package families selected by native dependencies at package time. */
@@ -93,6 +95,8 @@ export const ALLOWED_SMART_UNPACK_PACKAGE_PREFIXES = [
   'node_modules/@koromix/koffi-',
   'node_modules/@vscode/ripgrep-',
   'node_modules/node-addon-require-builtin-',
+  // The skin-center plugin transforms CSS through lightningcss at runtime.
+  'node_modules/lightningcss-',
 ] as const
 
 /** Every generated JavaScript file shipped by the installed DSH CLI package. */
