@@ -24,6 +24,27 @@ function assert(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(`dsh-plugin-desktop: packaged runtime smoke ${message}`)
 }
 
+/**
+ * Remove one scratch directory, tolerating a cleanup the host refuses.
+ *
+ * These scratches live in the OS temp directory. A confined host can refuse to
+ * delete a tree its own child process created, and an open handle keeps a path
+ * busy past any retry budget; neither says anything about the packaged runtime,
+ * which is what this smoke checks. Cleanup failure is reported as a warning
+ * naming the leftover so the residue stays diagnosable instead of failing a
+ * release build at its last step.
+ * @param root - the scratch directory to remove.
+ */
+function removeScratch(root: string): void {
+  try {
+    rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
+  } catch (error) {
+    process.stderr.write(
+      `dsh-plugin-desktop: packaged runtime smoke left ${root} behind: ${error instanceof Error ? error.message : String(error)}\n`,
+    )
+  }
+}
+
 const installAnchor = new URL('../package.json', import.meta.url)
 assert(
   /([\\/])app\.asar\1/u.test(installAnchor.pathname),
@@ -75,7 +96,7 @@ async function smokeSessionMigration(): Promise<void> {
     assert(readFileSync(join(directory, 'session.v2.jsonl'), 'utf8') === source, 'changed the original V2 session log')
   } finally {
     await ctx.fiber.dispose()
-    rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
+    removeScratch(root)
   }
 }
 
@@ -103,7 +124,7 @@ async function smokeDiagnosticExportWorker(): Promise<void> {
       `diagnostic Worker omitted ${crashEntry}`,
     )
   } finally {
-    rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
+    removeScratch(root)
   }
 }
 
@@ -215,7 +236,7 @@ try {
     releaseResolver()
   }
 } finally {
-  rmSync(root, { recursive: true, force: true, maxRetries: 8, retryDelay: 100 })
+  removeScratch(root)
 }
 
 await smokeSessionMigration()

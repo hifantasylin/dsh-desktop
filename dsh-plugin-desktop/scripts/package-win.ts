@@ -136,6 +136,15 @@ export function packageWindowsArtifact(
   const cleanEnvironment = withoutWindowsSigningSecrets(options.env)
   options.log(`Building an unsigned Windows x64 ${artifact}; Authenticode is a separate release step.`)
   if (options.env.DSH_PACKAGE_CHECK_ALREADY_RAN !== '1') {
+    // The layout gate owns the bilingual documentation records and the vendored
+    // artifacts. The package preflight below reads neither, so a stale record or
+    // a superseded vendor tree reaches an installer through this path alone.
+    options.run(
+      options.commandShell,
+      ['/d', '/s', '/c', 'corepack yarn check:layout'],
+      options.workspaceRoot,
+      cleanEnvironment,
+    )
     options.run(
       options.commandShell,
       [

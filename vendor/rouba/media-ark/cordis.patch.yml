@@ -1,5 +1,0 @@
-# dsh bundle layer: mount the Volcengine Ark video provider onto ctx.media. The
-# provider resolves ARK_API_KEY per operation.
-- insert:
-    - id: roubaai-media-ark
-      name: '@roubaai/media-ark'

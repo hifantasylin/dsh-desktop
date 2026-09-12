@@ -48,19 +48,25 @@ describe('Windows x64 installer packaging', () => {
     packageWindowsInstaller({ ...options(calls, logs), prepareRuntime })
 
     expect(prepareRuntime).toHaveBeenCalledOnce()
-    expect(calls).toHaveLength(3)
+    expect(calls).toHaveLength(4)
     expect(calls[0]).toEqual({
+      command: 'C:\\Windows\\System32\\cmd.exe',
+      args: ['/d', '/s', '/c', 'corepack yarn check:layout'],
+      cwd: 'C:\\repo',
+      env: { PATH: 'C:\\Windows\\System32', SAFE_VALUE: 'kept' },
+    })
+    expect(calls[1]).toEqual({
       command: 'C:\\Windows\\System32\\cmd.exe',
       args: [
         '/d',
         '/s',
         '/c',
-        'corepack yarn workspace dsh-plugin-desktop-beta check:win-package',
+        'corepack yarn workspace dsh-plugin-desktop check:win-package',
       ],
       cwd: 'C:\\repo',
       env: { PATH: 'C:\\Windows\\System32', SAFE_VALUE: 'kept' },
     })
-    expect(calls[1]).toEqual({
+    expect(calls[2]).toEqual({
       command: 'C:\\Program Files\\nodejs\\node.exe',
       args: [
         'C:\\repo\\node_modules\\electron-builder\\cli.js',
@@ -80,7 +86,7 @@ describe('Windows x64 installer packaging', () => {
         DSH_ELECTRON_BUILDER_TRAVERSAL_ONLY: '1',
       },
     })
-    expect(calls[2]).toEqual({
+    expect(calls[3]).toEqual({
       command: 'C:\\Program Files\\nodejs\\node.exe',
       args: ['C:\\repo\\dsh-plugin-desktop\\scripts\\verify-win-installer.ts'],
       cwd: 'C:\\repo\\dsh-plugin-desktop',
@@ -101,7 +107,7 @@ describe('Windows x64 installer packaging', () => {
 
     packageWindowsArtifact(value, 'zip', 'portable archive')
 
-    expect(calls[1]?.args).toEqual([
+    expect(calls[2]?.args).toEqual([
       'C:\\repo\\node_modules\\electron-builder\\cli.js',
       '--win',
       'zip',
@@ -111,7 +117,7 @@ describe('Windows x64 installer packaging', () => {
       '--config.win.signExecutable=false',
       '--config.npmRebuild=false',
     ])
-    expect(calls[2]?.args).toEqual([
+    expect(calls[3]?.args).toEqual([
       'C:\\repo\\dsh-plugin-desktop\\scripts\\verify-win-portable.ts',
     ])
     expect(logs).toEqual([

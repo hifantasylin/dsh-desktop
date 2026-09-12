@@ -39,10 +39,14 @@
       name: '@roubaai/brand'
     - id: roubaai-media
       name: '@roubaai/media'
-    - id: roubaai-media-maizi
-      name: '@roubaai/media-maizi'
+    # Ark registers before Maizi on purpose: the registry's un-named lookup
+    # (`ctx.media.image()` / `ctx.media.video()`) takes the FIRST registered
+    # provider, so this order makes 火山引擎 the default backend for a row that
+    # names no adapter. Keep it unless the default is meant to move to Maizi.
     - id: roubaai-media-ark
       name: '@roubaai/media-ark'
+    - id: roubaai-media-maizi
+      name: '@roubaai/media-maizi'
     - id: roubaai-media-mxapi
       name: '@roubaai/media-mxapi'
     - id: roubaai-settings
@@ -57,6 +61,8 @@
       name: '@linxin666/dsh-client-ui-web-ui-settings'
     - id: lin-tool-describe-image
       name: '@linxin666/dsh-tool-describe-image'
+    - id: lin-usage
+      name: '@linxin666/dsh-usage'
     - id: rouba-skills-sync
       name: '@rouba/skills-sync'
     - id: agent-teams

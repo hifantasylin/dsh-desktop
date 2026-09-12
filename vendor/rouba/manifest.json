@@ -1,0 +1,45 @@
+{
+  "source": {
+    "repository": "git@github.com:hifantasylin/roubaai-media.git",
+    "commit": "ad0bbdd72b178007455212da5e7d2c6c19c76e2e",
+    "dirty": false
+  },
+  "packages": [
+    {
+      "name": "@roubaai/brand",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-brand-0.1.2-rc.3.tgz",
+      "sha256": "8e0d55eca24e6c0abfba71ddef5f5bf1469923cb734d08d8e17866d445f046b4"
+    },
+    {
+      "name": "@roubaai/media",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-media-0.1.2-rc.3.tgz",
+      "sha256": "65d539b5e678b3f36cdc40999f17702ad0dc03b0c4b726d37a83fcba299f9a3f"
+    },
+    {
+      "name": "@roubaai/media-ark",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-media-ark-0.1.2-rc.3.tgz",
+      "sha256": "f3a1a6ace8ba9b84d86aa8bc727deaa4720786515e662c15c8cfea5bd18c4835"
+    },
+    {
+      "name": "@roubaai/media-maizi",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-media-maizi-0.1.2-rc.3.tgz",
+      "sha256": "cf145f092be08520c09776489a9738cb2fe2773dc09c5849d3f5a1cea2502cb3"
+    },
+    {
+      "name": "@roubaai/media-mxapi",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-media-mxapi-0.1.2-rc.3.tgz",
+      "sha256": "df5d76d250e6e85e737f22be8cce9f8cfdfce83d9efe9fc453565f9335af0f14"
+    },
+    {
+      "name": "@roubaai/settings",
+      "version": "0.1.2-rc.3",
+      "tarball": "roubaai-settings-0.1.2-rc.3.tgz",
+      "sha256": "3897398d732e0202900d0e27c49b34e06f8750a9c8f40b27c348cd8338bcdcc8"
+    }
+  ]
+}
