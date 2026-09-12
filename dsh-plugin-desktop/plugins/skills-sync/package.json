@@ -1,0 +1,8 @@
+{
+  "name": "@rouba/skills-sync",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "Ships the Rouba skills with the desktop package and installs them into the user DSH home on launch."
+}
