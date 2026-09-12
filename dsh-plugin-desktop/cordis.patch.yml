@@ -26,3 +26,47 @@
     printUrl: false
     surfaceContext: true
     trustedHosts: []
+
+# Rouba capability layer.
+# All six Rouba packages ship as local copies under vendor/rouba, synced out of
+# the roubaai-media repository by `yarn vendor:rouba`. They are NOT profile
+# dependencies, so their bundle patches are not auto-reconciled — these rows
+# mount them explicitly (do not also add them to a profile, or the loader will
+# report a duplicate entry id). `@roubaai/brand` declares no `dsh.bundle` at all,
+# so a row here is its only way into a composition.
+- insert:
+    - id: roubaai-brand
+      name: '@roubaai/brand'
+    - id: roubaai-media
+      name: '@roubaai/media'
+    - id: roubaai-media-maizi
+      name: '@roubaai/media-maizi'
+    - id: roubaai-media-ark
+      name: '@roubaai/media-ark'
+    - id: roubaai-media-mxapi
+      name: '@roubaai/media-mxapi'
+    - id: roubaai-settings
+      name: '@roubaai/settings'
+    - id: better-sidebar
+      name: dsh-better-sidebar
+    - id: lin-ui-skill-explorer
+      name: '@linxin666/dsh-client-ui-skill-explorer'
+    - id: lin-ui-skin-center
+      name: '@linxin666/dsh-client-ui-skin-center'
+    - id: lin-ui-web-ui-settings
+      name: '@linxin666/dsh-client-ui-web-ui-settings'
+    - id: lin-tool-describe-image
+      name: '@linxin666/dsh-tool-describe-image'
+    - id: rouba-skills-sync
+      name: '@rouba/skills-sync'
+    - id: agent-teams
+      name: '@nanmicoder/dsh-agent-teams'
+
+# The vendored runtime is an official-profile client build, so the
+# `ui-brand-official` row shipped by the web-app bundle has its
+# `DSH_CLIENT_BUILD_PROFILE !== 'official'` gate compiled away (the value is
+# inlined at build time) and therefore registers unconditionally. It then
+# collides with the Rouba occupant on the `single` brand slots. Disable the
+# official row so the Rouba brand owns them.
+- id: ui-brand-official
+  disabled: true

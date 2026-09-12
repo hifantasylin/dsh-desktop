@@ -135,7 +135,7 @@
     "verify:aa": "DSH_VERIFY_AA=1 node scripts/verify-profile-boot.mjs"
   },
   "dependencies": {
-    "@agents-anywhere/dsh-bridge-next": "file:../vendor/agents-anywhere/agents-anywhere-dsh-bridge-next-0.1.0-dev.0.desktop.c00df092c98b2.rcda81994.tgz",
+    "@agents-anywhere/dsh-bridge-next": "file:../vendor/agents-anywhere/agents-anywhere-dsh-bridge-next-0.1.0-dev.0.desktop.c10300fd5b013.rcda81994.tgz",
     "@deepseek-ai/cordis": "4.0.2",
     "@deepseek-ai/cordis-plugin-group": "1.0.2",
     "@deepseek-ai/cordis-plugin-include": "1.0.7",
@@ -366,7 +366,7 @@
         "build/tray-iconTemplate@2x.png",
         "node_modules/@agents-anywhere/dsh-bridge-next/lib/bundled-connector/**"
       ],
-      "artifactName": "DSH-Desktop-Beta-${version}-${arch}.${ext}",
+      "artifactName": "RoubaAI-DSH-Desktop-Beta-${version}-${arch}.${ext}",
       "target": [
         "dir"
       ],
@@ -405,7 +405,7 @@
           ]
         }
       ],
-      "artifactName": "DSH-Desktop-Beta-${version}-${arch}-Portable.${ext}",
+      "artifactName": "RoubaAI-DSH-Desktop-Beta-${version}-${arch}-Portable.${ext}",
       "icon": "build/app-icon.png"
     },
     "nsis": {
@@ -420,7 +420,7 @@
       "differentialPackage": false,
       "shortcutName": "DSH Desktop Beta",
       "useZip": false,
-      "artifactName": "DSH-Desktop-Beta-${version}-${arch}-Setup.${ext}"
+      "artifactName": "RoubaAI-DSH-Desktop-Beta-${version}-${arch}-Setup.${ext}"
     },
     "linux": {
       "asarUnpack": [
