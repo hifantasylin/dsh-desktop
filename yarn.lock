@@ -7211,21 +7211,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@roubaai/brand@file:../vendor/rouba/roubaai-brand-0.1.2-rc.6.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
-  version: 0.1.2-rc.6
-  resolution: "@roubaai/brand@file:../vendor/rouba/roubaai-brand-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-brand-0.1.2-rc.6.tgz::hash=8eb359&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+"@roubaai/brand@file:../vendor/rouba/roubaai-brand-0.1.2-rc.7.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
+  version: 0.1.2-rc.7
+  resolution: "@roubaai/brand@file:../vendor/rouba/roubaai-brand-0.1.2-rc.7.tgz#../vendor/rouba/roubaai-brand-0.1.2-rc.7.tgz::hash=1f4d87&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
   peerDependenciesMeta:
     "@deepseek-ai/cordis":
       optional: true
-  checksum: 10c0/e416002fcc59dfccb6ee0c6d710b1359be61c2c01b8870d5b4935529daf9b293badc927df218376b407e86c33cc81c0a094cafceb44febfa1a2df80772414e82
+  checksum: 10c0/6394a89c0491e37eb1fda0ae545e0680df90e22dc276061f9965282530c54c6492a9132cdf8c541eb36b4eff1572c1e88235a530e35006dcbe1edae9237a4cab
   languageName: node
   linkType: hard
 
-"@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
-  version: 0.1.2-rc.11
-  resolution: "@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz#../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz::hash=973b1a&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+"@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.12.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
+  version: 0.1.2-rc.12
+  resolution: "@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.12.tgz#../vendor/rouba/roubaai-canvas-0.1.2-rc.12.tgz::hash=24f00c&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     dsh-better-sidebar: ^0.19.0
@@ -7234,17 +7234,17 @@ __metadata:
       optional: true
     dsh-better-sidebar:
       optional: true
-  checksum: 10c0/c4d85bc9d3fcab78fb62fbade6ca2f96e5290466a79a2a4e23e14c298cd2f34717e1614c8585b55e45e564dd2e43c807e8f29bb31091cd96af98840e16ded4b5
+  checksum: 10c0/30753d4c700a469e291fb78bddb1c81a97ba4b961661cf5ff2ca97208971253dc5b50748d7c6837321977bc4d0ed7fdb6caa1018dcf318c9ff1af056203b6204
   languageName: node
   linkType: hard
 
 "@roubaai/media-ark@file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
   version: 0.1.2-rc.6
-  resolution: "@roubaai/media-ark@file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz::hash=b613dd&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+  resolution: "@roubaai/media-ark@file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz::hash=e87ead&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     "@deepseek-ai/dsh-credentials": 0.1.5-rc.1
-    "@roubaai/media": ^0.1.2-rc.12
+    "@roubaai/media": ^0.1.2-rc.13
   peerDependenciesMeta:
     "@deepseek-ai/cordis":
       optional: true
@@ -7252,19 +7252,19 @@ __metadata:
       optional: true
     "@roubaai/media":
       optional: true
-  checksum: 10c0/66121886bbfe0bbd6373c83dc7b1c194d9afa3364f36f2fda98291c6c844f3a26d91baddf1dbce09356e2886b1927174f54a5d33fbe457671ee6893317e71662
+  checksum: 10c0/2110763111259bb9e67e9a405bfed6c6c9353b5a19796b75c405d0e1afbb5388c3a55a8cf6d4dcd17110872c099e27cca27d4f149c19870f0123f8b69612cd43
   languageName: node
   linkType: hard
 
 "@roubaai/media-maizi@file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
   version: 0.1.2-rc.6
-  resolution: "@roubaai/media-maizi@file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz::hash=4b8681&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+  resolution: "@roubaai/media-maizi@file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz::hash=8abfcb&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     "@deepseek-ai/dsh-attachment": 0.1.5-rc.1
     "@deepseek-ai/dsh-credentials": 0.1.5-rc.1
     "@deepseek-ai/dsh-invariants": 0.1.5-rc.1
-    "@roubaai/media": ^0.1.2-rc.12
+    "@roubaai/media": ^0.1.2-rc.13
   peerDependenciesMeta:
     "@deepseek-ai/cordis":
       optional: true
@@ -7276,17 +7276,17 @@ __metadata:
       optional: true
     "@roubaai/media":
       optional: true
-  checksum: 10c0/aa77c5544e911d7a6671e48c28d703a945f33e11d09c28eb602595b22a5bf3f151958297b73e02f8cc04f661d5316122f842a2524d360eb609b57c950a866714
+  checksum: 10c0/e90357b302d2fe1fce741da853818623baa9b05b4ae6bff23df4aa421fdc99007255cdc2d39fb06a87d1e59c0e49600a296298338b36f83a58599844a4fe708e
   languageName: node
   linkType: hard
 
 "@roubaai/media-mxapi@file:../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
   version: 0.1.2-rc.6
-  resolution: "@roubaai/media-mxapi@file:../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz::hash=d9e50d&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+  resolution: "@roubaai/media-mxapi@file:../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz#../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz::hash=7ed32a&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     "@deepseek-ai/dsh-credentials": 0.1.5-rc.1
-    "@roubaai/media": ^0.1.2-rc.12
+    "@roubaai/media": ^0.1.2-rc.13
   peerDependenciesMeta:
     "@deepseek-ai/cordis":
       optional: true
@@ -7294,13 +7294,13 @@ __metadata:
       optional: true
     "@roubaai/media":
       optional: true
-  checksum: 10c0/af1715efeb92061e9602bbe4ea4895d40737a7e3145c87bd8439fc8e213869041c11f9d8ab2efc338c3b62a16fb6ed3da4b8904ec0be7759828ff7723e1e619e
+  checksum: 10c0/6613a6ff71a80aa69ad7f027da58c0a25d273faceb5317acc02b6218efdf6d2064e0a13a373b4104cded44f98133221f5b9901471ae3420f6cb9da94b9afa7f0
   languageName: node
   linkType: hard
 
-"@roubaai/media@file:../vendor/rouba/roubaai-media-0.1.2-rc.12.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
-  version: 0.1.2-rc.12
-  resolution: "@roubaai/media@file:../vendor/rouba/roubaai-media-0.1.2-rc.12.tgz#../vendor/rouba/roubaai-media-0.1.2-rc.12.tgz::hash=67a756&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+"@roubaai/media@file:../vendor/rouba/roubaai-media-0.1.2-rc.13.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
+  version: 0.1.2-rc.13
+  resolution: "@roubaai/media@file:../vendor/rouba/roubaai-media-0.1.2-rc.13.tgz#../vendor/rouba/roubaai-media-0.1.2-rc.13.tgz::hash=d73e72&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     "@deepseek-ai/dsh-agent": 0.1.5-rc.1
@@ -7327,7 +7327,7 @@ __metadata:
       optional: true
     "@deepseek-ai/dsh-tools":
       optional: true
-  checksum: 10c0/17f260bc375914ffa19a1136f1d23275f6eb4628bb7ddbef9003ddb1f84d9a0e853547dc6f828350effb58c69956bd810518d292fb86e43678297afb3bd647e3
+  checksum: 10c0/f2cf64e1d80f31642d4af53767fd6b7b0f34f5fa7acad82d11a36dae44fce4c200770aba37aba44f5bd08259bd5c585e4daad1fbf2c97b8dd8923ef73c6d54bb
   languageName: node
   linkType: hard
 
@@ -10868,9 +10868,9 @@ __metadata:
     "@linxin666/dsh-usage": "npm:0.3.20"
     "@nanmicoder/dsh-agent-teams": "npm:0.1.17-rc.1"
     "@rouba/skills-sync": "file:./plugins/skills-sync"
-    "@roubaai/brand": "file:../vendor/rouba/roubaai-brand-0.1.2-rc.6.tgz"
-    "@roubaai/canvas": "file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz"
-    "@roubaai/media": "file:../vendor/rouba/roubaai-media-0.1.2-rc.12.tgz"
+    "@roubaai/brand": "file:../vendor/rouba/roubaai-brand-0.1.2-rc.7.tgz"
+    "@roubaai/canvas": "file:../vendor/rouba/roubaai-canvas-0.1.2-rc.12.tgz"
+    "@roubaai/media": "file:../vendor/rouba/roubaai-media-0.1.2-rc.13.tgz"
     "@roubaai/media-ark": "file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz"
     "@roubaai/media-maizi": "file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz"
     "@roubaai/media-mxapi": "file:../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.6.tgz"

@@ -1,45 +1,45 @@
 {
   "source": {
     "repository": "git@github.com:hifantasylin/roubaai-media.git",
-    "commit": "0919741daabff156c5b587e9450e4ac864654cff",
+    "commit": "7bf069ed8c2f2186f27315a679362908fbd3f9e3",
     "dirty": false
   },
   "packages": [
     {
       "name": "@roubaai/brand",
-      "version": "0.1.2-rc.6",
-      "tarball": "roubaai-brand-0.1.2-rc.6.tgz",
-      "sha256": "1b53b47cb19c8bad67083572f9cbcd99aa290061e0958a75b276d377b53830be"
+      "version": "0.1.2-rc.7",
+      "tarball": "roubaai-brand-0.1.2-rc.7.tgz",
+      "sha256": "843ade5d273d3c0e0b4c8fd83378ab5f5081e2f11ddf33d592f8ba566bc3b52d"
     },
     {
       "name": "@roubaai/canvas",
-      "version": "0.1.2-rc.11",
-      "tarball": "roubaai-canvas-0.1.2-rc.11.tgz",
-      "sha256": "f27f9f8fb2f1805faaa305b129a9f594bcfb1323d810ad33be4a70cdc2d2aa6d"
+      "version": "0.1.2-rc.12",
+      "tarball": "roubaai-canvas-0.1.2-rc.12.tgz",
+      "sha256": "9a3a8a514cfe14da62b66efcd6667fca7ac8411f82caa2641cf55d0c7a270d79"
     },
     {
       "name": "@roubaai/media",
-      "version": "0.1.2-rc.12",
-      "tarball": "roubaai-media-0.1.2-rc.12.tgz",
-      "sha256": "48066e55c16244bab7441efe901a27b0c87e48a117b374068a12ba1717372dfa"
+      "version": "0.1.2-rc.13",
+      "tarball": "roubaai-media-0.1.2-rc.13.tgz",
+      "sha256": "7087741736bc8f8da90b428aa26fa650d57c15af2cd328bb6eb5d4285a7880cf"
     },
     {
       "name": "@roubaai/media-ark",
       "version": "0.1.2-rc.6",
       "tarball": "roubaai-media-ark-0.1.2-rc.6.tgz",
-      "sha256": "9d90f1c1a3ce8fd9a0f0d24f066ca156e6945868e764be3801c92758c750229b"
+      "sha256": "6f2992664fa7dadc938de0d66eaa898d2026599632a47b011666617f0f3c33e8"
     },
     {
       "name": "@roubaai/media-maizi",
       "version": "0.1.2-rc.6",
       "tarball": "roubaai-media-maizi-0.1.2-rc.6.tgz",
-      "sha256": "3d288ed0318ee7062ab193f6f4b01f2daf7ccc291fc9a3296979eae00831f28c"
+      "sha256": "c89072b49913c773ed2d98f4403d874b7f4ce200c1e717f7112247b734289f42"
     },
     {
       "name": "@roubaai/media-mxapi",
       "version": "0.1.2-rc.6",
       "tarball": "roubaai-media-mxapi-0.1.2-rc.6.tgz",
-      "sha256": "736534ebd7839db4c0a6bdefcf21ef3f0d95896deb688b54240aa4cc8baeb745"
+      "sha256": "f6f20a82b1c1b8db599b4917592e44b2f17ae8e2b9ec27014cc74d1527e96ebd"
     },
     {
       "name": "@roubaai/settings",
