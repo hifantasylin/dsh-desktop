@@ -1,0 +1,18 @@
+{
+  "source": {
+    "repository": "git@github.com:omdsh-dev/DSH-better-sidebar.git",
+    "commit": "1fcf43ccbedd6e66370b7fb81df2b4dd0ef2604e",
+    "patchCommit": "74fba19e6124b3ea93d8d2c527c5d91fbc7cfaad",
+    "patchBranch": "fix/native-url-seed-path",
+    "patch": "A url-seeded page keeps its address on creation (src/client/native/tab-adapter.tsx): the record took path/diff/meta but not url, and the browser view reads tab.path on mount, so a link opened in the sidebar arrived with an empty address bar. Upstream PR pending; until it lands this artifact is the vendored source.",
+    "dirty": false
+  },
+  "packages": [
+    {
+      "name": "dsh-better-sidebar",
+      "version": "0.19.1",
+      "tarball": "dsh-better-sidebar-0.19.1.tgz",
+      "sha256": "45209711efc3be13179683bace3a07516c41d3fc6a1770fc50445fb6576ddc5a"
+    }
+  ]
+}

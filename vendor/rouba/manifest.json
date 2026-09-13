@@ -1,45 +1,51 @@
 {
   "source": {
     "repository": "git@github.com:hifantasylin/roubaai-media.git",
-    "commit": "ad0bbdd72b178007455212da5e7d2c6c19c76e2e",
+    "commit": "e2be59539f7bc3299015fc43dbdcaf41187010ed",
     "dirty": false
   },
   "packages": [
     {
       "name": "@roubaai/brand",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-brand-0.1.2-rc.3.tgz",
-      "sha256": "8e0d55eca24e6c0abfba71ddef5f5bf1469923cb734d08d8e17866d445f046b4"
+      "version": "0.1.2-rc.6",
+      "tarball": "roubaai-brand-0.1.2-rc.6.tgz",
+      "sha256": "1b53b47cb19c8bad67083572f9cbcd99aa290061e0958a75b276d377b53830be"
+    },
+    {
+      "name": "@roubaai/canvas",
+      "version": "0.1.2-rc.9",
+      "tarball": "roubaai-canvas-0.1.2-rc.9.tgz",
+      "sha256": "9bbef48347c8355e8eebece10ca17097a05e93c7d9d2c698ce8d40704404902b"
     },
     {
       "name": "@roubaai/media",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-media-0.1.2-rc.3.tgz",
-      "sha256": "65d539b5e678b3f36cdc40999f17702ad0dc03b0c4b726d37a83fcba299f9a3f"
+      "version": "0.1.2-rc.12",
+      "tarball": "roubaai-media-0.1.2-rc.12.tgz",
+      "sha256": "48066e55c16244bab7441efe901a27b0c87e48a117b374068a12ba1717372dfa"
     },
     {
       "name": "@roubaai/media-ark",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-media-ark-0.1.2-rc.3.tgz",
-      "sha256": "f3a1a6ace8ba9b84d86aa8bc727deaa4720786515e662c15c8cfea5bd18c4835"
+      "version": "0.1.2-rc.6",
+      "tarball": "roubaai-media-ark-0.1.2-rc.6.tgz",
+      "sha256": "9d90f1c1a3ce8fd9a0f0d24f066ca156e6945868e764be3801c92758c750229b"
     },
     {
       "name": "@roubaai/media-maizi",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-media-maizi-0.1.2-rc.3.tgz",
-      "sha256": "cf145f092be08520c09776489a9738cb2fe2773dc09c5849d3f5a1cea2502cb3"
+      "version": "0.1.2-rc.6",
+      "tarball": "roubaai-media-maizi-0.1.2-rc.6.tgz",
+      "sha256": "3d288ed0318ee7062ab193f6f4b01f2daf7ccc291fc9a3296979eae00831f28c"
     },
     {
       "name": "@roubaai/media-mxapi",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-media-mxapi-0.1.2-rc.3.tgz",
-      "sha256": "df5d76d250e6e85e737f22be8cce9f8cfdfce83d9efe9fc453565f9335af0f14"
+      "version": "0.1.2-rc.6",
+      "tarball": "roubaai-media-mxapi-0.1.2-rc.6.tgz",
+      "sha256": "736534ebd7839db4c0a6bdefcf21ef3f0d95896deb688b54240aa4cc8baeb745"
     },
     {
       "name": "@roubaai/settings",
-      "version": "0.1.2-rc.3",
-      "tarball": "roubaai-settings-0.1.2-rc.3.tgz",
-      "sha256": "3897398d732e0202900d0e27c49b34e06f8750a9c8f40b27c348cd8338bcdcc8"
+      "version": "0.1.2-rc.6",
+      "tarball": "roubaai-settings-0.1.2-rc.6.tgz",
+      "sha256": "8e48af28e855850ddb32c480cfcdd465e1396ec39962d79cae0381176b1f44c6"
     }
   ]
 }
