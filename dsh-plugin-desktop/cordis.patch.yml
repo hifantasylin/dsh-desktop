@@ -73,6 +73,14 @@
     - id: agent-teams
       name: '@nanmicoder/dsh-agent-teams'
 
+# The official release service ships the official application, so this build
+# does not use it. Disabling the row removes every path to it: no background
+# polling, no tray command, and no `/api/desktop/updates/check` route. The
+# chrome's "check for updates" action runs the tray command that row registers,
+# so with the row gone the action cannot reach the service either.
+- id: desktop-updates
+  disabled: true
+
 # The vendored runtime is an official-profile client build, so the
 # `ui-brand-official` row shipped by the web-app bundle has its
 # `DSH_CLIENT_BUILD_PROFILE !== 'official'` gate compiled away (the value is

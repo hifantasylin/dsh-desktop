@@ -1,7 +1,7 @@
 {
   "source": {
     "repository": "git@github.com:hifantasylin/roubaai-media.git",
-    "commit": "a8198ffb5b8516a2d884a798a8a85cde982d8a16",
+    "commit": "0919741daabff156c5b587e9450e4ac864654cff",
     "dirty": false
   },
   "packages": [
@@ -13,9 +13,9 @@
     },
     {
       "name": "@roubaai/canvas",
-      "version": "0.1.2-rc.10",
-      "tarball": "roubaai-canvas-0.1.2-rc.10.tgz",
-      "sha256": "97200549f537341b4e5b842fe4e83ec72ceee6c5b1f878a844c9af86a45d15f5"
+      "version": "0.1.2-rc.11",
+      "tarball": "roubaai-canvas-0.1.2-rc.11.tgz",
+      "sha256": "f27f9f8fb2f1805faaa305b129a9f594bcfb1323d810ad33be4a70cdc2d2aa6d"
     },
     {
       "name": "@roubaai/media",

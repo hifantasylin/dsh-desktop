@@ -7223,9 +7223,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.10.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
-  version: 0.1.2-rc.10
-  resolution: "@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.10.tgz#../vendor/rouba/roubaai-canvas-0.1.2-rc.10.tgz::hash=1e3b0d&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
+"@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz::locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop":
+  version: 0.1.2-rc.11
+  resolution: "@roubaai/canvas@file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz#../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz::hash=973b1a&locator=dsh-plugin-desktop%40workspace%3Adsh-plugin-desktop"
   peerDependencies:
     "@deepseek-ai/cordis": ^4.0.2
     dsh-better-sidebar: ^0.19.0
@@ -7234,7 +7234,7 @@ __metadata:
       optional: true
     dsh-better-sidebar:
       optional: true
-  checksum: 10c0/534ba90228e309f1efaa4ef9154b082fd4882bca7732e9293cb5089ae75731c740bdc55b22945a393780d97cc4d7a07771db488aab535e39f2f1327499d127c8
+  checksum: 10c0/c4d85bc9d3fcab78fb62fbade6ca2f96e5290466a79a2a4e23e14c298cd2f34717e1614c8585b55e45e564dd2e43c807e8f29bb31091cd96af98840e16ded4b5
   languageName: node
   linkType: hard
 
@@ -10869,7 +10869,7 @@ __metadata:
     "@nanmicoder/dsh-agent-teams": "npm:0.1.17-rc.1"
     "@rouba/skills-sync": "file:./plugins/skills-sync"
     "@roubaai/brand": "file:../vendor/rouba/roubaai-brand-0.1.2-rc.6.tgz"
-    "@roubaai/canvas": "file:../vendor/rouba/roubaai-canvas-0.1.2-rc.10.tgz"
+    "@roubaai/canvas": "file:../vendor/rouba/roubaai-canvas-0.1.2-rc.11.tgz"
     "@roubaai/media": "file:../vendor/rouba/roubaai-media-0.1.2-rc.12.tgz"
     "@roubaai/media-ark": "file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.6.tgz"
     "@roubaai/media-maizi": "file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.6.tgz"
