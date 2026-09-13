@@ -28,7 +28,7 @@
     trustedHosts: []
 
 # Rouba capability layer.
-# All six Rouba packages ship as local copies under vendor/rouba, synced out of
+# All seven Rouba packages ship as local copies under vendor/rouba, synced out of
 # the roubaai-media repository by `yarn vendor:rouba`. They are NOT profile
 # dependencies, so their bundle patches are not auto-reconciled — these rows
 # mount them explicitly (do not also add them to a profile, or the loader will
@@ -51,6 +51,11 @@
       name: '@roubaai/media-mxapi'
     - id: roubaai-settings
       name: '@roubaai/settings'
+    # The canvas serves the workbench build it ships inside its own tarball, so
+    # no composition has to name a frontend path. Point `canvasRoot` at a
+    # checkout only to iterate on the frontend itself.
+    - id: roubaai-canvas
+      name: '@roubaai/canvas'
     - id: better-sidebar
       name: dsh-better-sidebar
     - id: lin-ui-skill-explorer
