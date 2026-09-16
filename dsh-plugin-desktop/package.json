@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-desktop",
-  "version": "2.0.9-rouba.4",
+  "version": "2.0.9-rouba.5",
   "description": "DSH Desktop: an Electron shell composed as a DeepSeek Harness Cordis plugin",
   "license": "MIT",
   "publishConfig": {
@@ -286,7 +286,7 @@
     "@rouba/skills-sync": "file:./plugins/skills-sync",
     "@roubaai/brand": "file:../vendor/rouba/roubaai-brand-0.1.2-rc.7.tgz",
     "@roubaai/canvas": "file:../vendor/rouba/roubaai-canvas-0.1.2-rc.13.tgz",
-    "@roubaai/media": "file:../vendor/rouba/roubaai-media-0.1.2-rc.14.tgz",
+    "@roubaai/media": "file:../vendor/rouba/roubaai-media-0.1.2-rc.20.tgz",
     "@roubaai/media-ark": "file:../vendor/rouba/roubaai-media-ark-0.1.2-rc.7.tgz",
     "@roubaai/media-maizi": "file:../vendor/rouba/roubaai-media-maizi-0.1.2-rc.7.tgz",
     "@roubaai/media-mxapi": "file:../vendor/rouba/roubaai-media-mxapi-0.1.2-rc.7.tgz",
